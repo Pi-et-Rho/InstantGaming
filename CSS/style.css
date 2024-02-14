@@ -1,0 +1,48 @@
+/*FONT*/
+/*h1, h2, ...*/
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+/*used for the rest of text*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/*VARIABLES*/
+:root {
+    /*colors definition*/
+    --color-background: #272727;
+    --color-orange: #ff5f2d;
+    --color-white: #f2f2f2;
+
+    /*font size*/
+    --font-size-small: 15px;
+    --font-size-medium: 18px;
+    --font-size-large: 22px;
+    --font-size-logo: 30px;
+}
+
+/*SET UP CONSTANTS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    font-family: 'Orbitron', sans-serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--font-size-medium);
+}
+
+/*BODY*/
+body {
+    background: var(--color-background);
+    color: var(--color-white);
+}
