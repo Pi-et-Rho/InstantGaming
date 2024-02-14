@@ -15,8 +15,36 @@
 <body>
     <!--HEADER-->
     <header>
+        <a href="#" class="logo"><i class='bx bxl-flutter'></i>Instant Gaming</a>
 
+        <nav class="navbar">
+            <div class="nav-links" id="navLinks">
+                <i class="bx bx-x" onclick="HideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gametype.html">Game Types</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Log-in/Sign-in</a></li>
+                    <li><i class='bx bxs-cart'></i></li>
+                    <li><i class='bx bxs-user'></i></li>
+                </ul>
+            </div>
+            <i class='bx bx-menu' onclick="ShowMenu()"></i>
+        </nav>
     </header>
+
+    <!--JavaScript for HEADER-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function ShowMenu() {
+            navLinks.style.right = "0";
+        }
+        function HideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
 
     <!--MAIN-->
     <main>
